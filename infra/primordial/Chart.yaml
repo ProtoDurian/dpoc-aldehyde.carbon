@@ -1,5 +1,5 @@
 apiVersion: v2
-name: dpoc-aldehyde-primordial
+name: dpoc-aldehyde-carbon-primordial
 description: primordial chart for aldehyde (platform-level; empty-but-valid — services own the records)
 type: application
 version: 0.1.0

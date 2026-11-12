@@ -19,8 +19,8 @@ jobs:
         run: |
           mkdir -p dist
           helm package infra/primordial --version "$VER" --app-version "$VER" -d dist/
-          helm push "dist/dpoc-aldehyde-primordial-$VER.tgz" "oci://$REG/charts"
+          helm push "dist/dpoc-aldehyde-carbon-primordial-$VER.tgz" "oci://$REG/charts"
       - name: package and push app chart
         run: |
           helm package infra/app --version "$VER" --app-version "$VER" -d dist/
-          helm push "dist/dpoc-aldehyde-$VER.tgz" "oci://$REG/charts"
+          helm push "dist/dpoc-aldehyde-carbon-$VER.tgz" "oci://$REG/charts"
